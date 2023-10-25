@@ -1,0 +1,67 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+.red{
+    color: red;
+}
+
+header{
+    background-color: teal;
+    text-align: center;
+    color: white;
+    box-shadow: 0 8px 8px #cfcdcd;
+}
+header h1{
+    height: 80px;
+    margin: 0;
+    padding: 5px;
+    display: flex;
+    align-items: center ;
+}
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    min-height: 60vh;
+}
+.sticky{
+    position: sticky;
+    top: 0;
+    box-shadow: 0 8px 8px #1d1d1d;
+    background-color: white;
+}
+.btn-primary{
+    color: #fff;
+    background-color: teal;
+    border-color: rgb(0, 224, 224);
+}
+p{
+    text-align: justify;
+    background-color: rgb(161, 244, 244);
+    padding: 15px;
+}
+button{
+    display: inline-block;
+    padding: 6px 12px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    user-select: none;
+    background-image: none;
+    border: 1px solid transparent;
+    border-radius: 4px;    
+}
+
+footer{
+    background-color: teal;
+    text-align: center;
+    color: white;
+    height: 300px;
+    box-shadow: 0 -8px 8px #cfcdcd;
+}
