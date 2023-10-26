@@ -24,6 +24,33 @@ $(function () {
      * 
      */
 
+
+/**
+        $.post(url, function (response, status, xhr) {
+        console.log({ response, status, xhr });
+        if (status == "success" && response.isSuccess) {
+            const users = response.results
+
+            users.forEach((user, index) => {
+                $('.users').append(`
+                    <div class="user-item">
+                    <div class="user-name"> Name: ${user.name} </div>
+                    <div class="user-email"> Email: ${user.email} </div>
+                    <div class="user-address"> Adresse: ${user.address} </div>
+                    <div class="user-city"> City: ${user.city} </div>
+                    <div class="user-country"> Country: ${user.country} </div>
+                </div>
+                `)
+            });
+            console.log(users);
+        }
+        //console.log({data, status, xhr});
+    },'json'
+    )
+    */
+
+    
+
     const url = "/api/users.json"
     $.get(url, function (response, status, xhr) {
         console.log({ response, status, xhr });
@@ -44,7 +71,9 @@ $(function () {
             console.log(users);
         }
         //console.log({data, status, xhr});
-    })
+    },'json'
+    )
 
+    
 
 })
